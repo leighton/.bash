@@ -7,5 +7,5 @@ function prompt_command {
   fi
   PS1=" \$PROMPT_SYMBOL \W\$git_info: ";
 }
-
+[ -z "$PS1" ] && return
 setenv PROMPT_COMMAND prompt_command
