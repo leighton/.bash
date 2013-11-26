@@ -1,3 +1,5 @@
 
-source var.bash
-source fn.bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+source $DIR/var.bash
+source $DIR/fn.bash
