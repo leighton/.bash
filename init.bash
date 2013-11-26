@@ -2,6 +2,8 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 HOST=`hostname -s`
 
+umask 002
+
 source $DIR/var.bash
 source $DIR/fn.bash
 source $DIR/prompt.bash #requires fn.bash
