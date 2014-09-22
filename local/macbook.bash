@@ -1,1 +1,3 @@
-setenv PROMPT_SYMBOL ★
+setenv PROMPT_SYMBOL ★  #Prompt symbol
+
+source ~/.env           #Environment variables
