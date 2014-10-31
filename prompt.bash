@@ -3,7 +3,7 @@
 function prompt_command {
   git_info="";
   if in_git_repo ; then
-    git_info=" (`git branch | sed s/*\ //`)";
+    git_info=" (`git branch | grep \* | sed s/*\ //`)";
   fi
   PS1=" \$PROMPT_SYMBOL \W\$git_info: ";
 }
