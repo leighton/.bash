@@ -6,5 +6,6 @@ if [ "$TERM" != "dumb" ]; then
     alias all='ls -al'
     alias emacs_tidy="find . -type f -name "*~" | xargs rm"
     alias grep='grep --color=auto'
+    alias mdless='pandoc -s -f markdown -t man \!* | groff -T utf8 -man | less'
 fi
 
